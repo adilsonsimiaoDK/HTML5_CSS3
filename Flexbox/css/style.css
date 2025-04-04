@@ -1,8 +1,68 @@
 body {
+  min-height: 800px;
+  border: 8px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .box {
+  display: flex;
   height: 200px;
   width: 200px;
   background-color: #0071ff;
   font-size: 40pt;
+  justify-content: center;
+
+  align-items: center;
+  &:hover {
+    background-color: #0056cc; /* Mudança de cor ao passar o mouse */
+  }
 }
+.arrows {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+#arrowleft,
+#arrowright {
+  margin: 10px; /* Espaçamento entre os botões */
+  padding: 10px; /* Ajuste o padding para um valor razoável */
+  width: 250px; /* Define uma largura fixa para os botões */
+  height: 250px; /* Define uma altura fixa para os botões */
+  display: flex; /* Faz o conteúdo (imagem) se alinhar dentro do botão */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+#arrowleft {
+  display: flex;
+}
+
+#arrowleft img,
+#arrowright img {
+  width: 100%; /* A imagem ocupa o espaço do botão */
+  height: auto; /* Mantém a proporção */
+}
+/* 
+div {
+  display: flex;
+  & .box {
+    height: 200px;
+    width: 200px;
+    background-color: #0071ff;
+    font-size: 40pt;
+    &:hover {
+      background-color: #0056cc; 
+      }
+      }
+      } 
+      */
