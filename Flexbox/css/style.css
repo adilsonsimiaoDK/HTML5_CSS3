@@ -5,12 +5,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+
   width: 100%;
+}
+#box-1 {
+  flex-shrink: 5;
 }
 
 .box {
@@ -45,12 +49,37 @@ body {
 }
 #arrowleft {
   display: flex;
+  transform: scaleX(-1);
 }
 
 #arrowleft img,
 #arrowright img {
   width: 100%; /* A imagem ocupa o espaço do botão */
   height: auto; /* Mantém a proporção */
+}
+button {
+  padding: 1em 2em;
+  background-color: #161a20;
+  border: none;
+  color: #f0f0f0;
+  border-radius: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  z-index: -1;
+}
+button:hover {
+  z-index: 0;
+  box-shadow: -40px 0 100px #008cff85, -40px 0 100px #e100ffbb;
 }
 /* 
 div {
