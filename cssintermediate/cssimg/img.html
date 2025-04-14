@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background image</title>
+    <style>
+      body {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a6/Brandenburger_Tor_abends.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        margin-right: 50px;
+        border: 5px solid black;
+      }
+      .alpha {
+        background-color: blue;
+        opacity: 0.5;
+        /* opacity value affected all values */
+      }
+      .opacity {
+        background-color: rgb(160, 25, 25, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alpha"></div>
+    <div class="opacity"></div>
+  </body>
+</html>

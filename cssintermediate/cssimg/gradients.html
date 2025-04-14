@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradients</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        background-image: url(../universe.jpg);
+        align-content: center;
+        height: 100%;
+        margin: 0;
+      }
+      div {
+        margin: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .linear {
+        background-image: linear-gradientw(white 30%);
+        align-content: center;
+        margin: 0 auto;
+      }
+      .radial {
+        background-image: radial-gradient(
+          black 50%,
+          white 31%,
+          transparent 70%
+        );
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linear">
+      <div class="radial"></div>
+    </div>
+  </body>
+</html>
