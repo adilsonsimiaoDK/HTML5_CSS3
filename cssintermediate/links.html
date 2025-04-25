@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      span {
+        font-size: 2rem;
+      }
+      a {
+        margin: 10px;
+        width: 250px;
+        text-align: center;
+        display: inline-block;
+        color: white;
+        text-decoration: uppercase;
+        background-color: tomato;
+        padding: 1rem;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+      a:hover {
+        background-color: aqua;
+        color: black;
+        border: 1px solid brown;
+      }
+      a:visited {
+        background-color: blueviolet;
+      }
+      a:active {
+        background-color: black;
+      }
+      input {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid grey;
+        font-size: 1.5rem;
+      }
+      /* Mensagem de erro */
+      .error-message {
+        display: none;
+        color: red;
+        font-size: 12px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 5px;
+      }
+      input:focus {
+        background-color: #ccc;
+        outline: none;
+      }
+      input:invalid {
+        border: 2px solid red;
+      }
+      input[type="email"]:invalid:focus ~ .error-message {
+        display: block;
+      }
+      input[type="checkbox"]:checked + span {
+        text-decoration: line-through;
+        color: #ddd;
+        height: 30px;
+        width: 50px;
+      }
+      input[type="checkbox"] {
+        background-color: green;
+        height: 30px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="youtube.com">This is a link</a>
+    <input type="email" placeholder="Email" />
+    <span class="error-message">Please, use a valid email</span>
+
+    <input type="checkbox" />
+    <span>Click here todo</span>
+  </body>
+</html>

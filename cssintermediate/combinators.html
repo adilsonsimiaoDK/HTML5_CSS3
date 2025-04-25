@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      body {
+        font-size: 2rem;
+      }
+      header {
+        background-color: beige;
+        padding: 20px;
+      }
+      div {
+        background-color: bisque;
+        padding: 20px;
+      }
+      div > article > p {
+        color: aqua;
+      }
+      div h2 {
+        color: green;
+      }
+      h2 ~ p {
+        font-weight: bold;
+        color: red;
+      }
+      h2 + p {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Combinators</h2>
+      <h3>CSS</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
+        debitis optio voluptates, ex officia libero vero quos corrupti,
+        doloribus praesentium quod inventore quidem maiores natus velit quasi
+        assumenda vitae totam?
+      </p>
+    </header>
+    <div>
+      <article>
+        <h2>Another heading</h2>
+        <p>
+          This is a Paragraph Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Harum libero sit aut suscipit animi repellendus sunt
+          dolorem neque itaque ab voluptates accusamus earum accusantium
+          sapiente adipisci, nisi exercitationem voluptatem dolores.
+        </p>
+      </article>
+    </div>
+    <div class="container">
+      <h2>This is a heading</h2>
+      <p>This is a Paragraph</p>
+      <p>This is a Paragraph</p>
+      <p>This is a Paragraph</p>
+      <p>This is a Paragraph</p>
+      <p>This is a Paragraph</p>
+      <p>This is a Paragraph</p>
+    </div>
+  </body>
+</html>
