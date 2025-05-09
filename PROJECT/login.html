@@ -8,18 +8,29 @@
   </head>
   <body>
     <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html" class="active">About</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="products.html">Products</a>
       <a href="login.html" class="active">Login</a>
     </nav>
     <header>
       <h1>Login</h1>
-      <form action="">
-        <input type="text" />
-        <input type="password" />
-        <input type="submit" />
+      <form id="myForm">
+        <input
+          class="data"
+          type="text"
+          name="username"
+          placeholder="Username"
+        />
+        <input
+          class="data"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button id="myButton">Submit</button>
       </form>
     </header>
+    <script src="script.jsx"></script>
   </body>
 </html>
