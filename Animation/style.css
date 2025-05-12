@@ -1,0 +1,60 @@
+/* * {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: blueviolet;
+}
+
+#item {
+  width: 35px;
+  height: 45px;
+  border: solid 5px green;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+} */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: blueviolet;
+}
+
+#item {
+  width: 45px;
+  height: 55px;
+  border: ridge 7px green;
+  transition: 150ms ease;
+  text-align: center;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#item:hover {
+  scale: 2;
+  animation: spin 2s linear infinite;
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+}
