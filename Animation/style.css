@@ -33,28 +33,33 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
-  background-color: blueviolet;
+  background-color: black;
 }
 
 #item {
   width: 45px;
   height: 55px;
   border: ridge 7px green;
-  transition: 150ms ease;
   text-align: center;
+  border: 6px solid aqua;
+  box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+  z-index: 10;
+  animation: 3s ease-in-out infinite;
+
+  animation-name: spin;
 }
 @keyframes spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  33% {
     transform: rotate(360deg);
   }
-}
-#item:hover {
-  scale: 2;
-  animation: spin 2s linear infinite;
-  width: 150px;
-  height: 150px;
-  border-radius: 30%;
+  67% {
+    transform: rotateX(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

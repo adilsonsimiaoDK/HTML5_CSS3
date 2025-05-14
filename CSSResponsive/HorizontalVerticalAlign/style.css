@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 800px;
+
+  border: solid black;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: row-reverse;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  /* Align-items control all products  */
+}
+.container > .box {
+  background-color: #0071ff;
+  height: 200px;
+  width: 200px;
+  font-size: 40pt;
+  align-content: center;
+  text-align: center;
+}

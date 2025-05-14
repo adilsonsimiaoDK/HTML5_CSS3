@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 800px;
+  border: solid 8px black;
+  gap: 20px;
+}
+#box-1 {
+  flex-grow: 1;
+}
+#box-2 {
+  flex-grow: 2;
+}
+.box {
+  flex-shrink: 5;
+  /* each element will grow up 300px */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0071ff;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+  border: solid 1px black;
+}
+@media (max-width: 1000px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
