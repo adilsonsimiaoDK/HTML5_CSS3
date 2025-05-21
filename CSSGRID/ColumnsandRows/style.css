@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  border: 8px solid tomato;
+  min-height: 800px;
+  /* grid-template-rows: 300px; */
+  /* grid-auto-rows: 300px; */
+  grid-auto-columns: 300px;
+  grid-auto-flow: column;
+  /* grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; */
+  gap: 10px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0071ff;
+
+  font-size: 40pt;
+}
