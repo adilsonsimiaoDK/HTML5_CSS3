@@ -62,20 +62,20 @@ const yearsUntilRetirement = function (birthYeah, firstName) {
 
 console.log(yearsUntilRetirement(1981, "adilson"));
 */
-const koala = [65, 54, 49];
-const dolphin = [44, 23, 71];
+const scoreKoalas = [65, 54, 49];
+const scoreDolphins = [4, 1, 1];
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-function checkWinnner(scoreKoala, scoreDolphin) {
+
+function checkWinner(scoreKoala, scoreDolphin) {
   const scoreKoalas = calcAverage(...scoreKoala);
   const scoreDolphins = calcAverage(...scoreDolphin);
-
-  if (scoreKoalas > scoreDolphins) {
+  if (scoreKoalas >= 2 * scoreDolphins) {
     return `Koala is the winner with average ${scoreKoalas}`;
-  } else if (scoreKoalas === scoreDolphins) {
-    return `was a empate Dolphins score ${scoreDolphins} and Koalas ${scoreKoalas} `;
+  } else if (scoreDolphins >= 2 * scoreKoalas) {
+    return `Dolphins win score ${scoreDolphins} and Koalas`;
   } else {
-    return ` Dolphins is the Winner with ${scoreDolphins}`;
+    return ` No team is  Win with `;
   }
 }
-console.log(checkWinnner(koala, dolphin));
-console.log(calcAverage(65, 54, 49));
+
+console.log(checkWinner(scoreKoalas, scoreDolphins));
