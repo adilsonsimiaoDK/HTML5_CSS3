@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* let hasDriverslicense = false;
 let passTest = true;
 if (passTest) hasDriverslicense = true;
@@ -61,7 +61,7 @@ const yearsUntilRetirement = function (birthYeah, firstName) {
 };
 
 console.log(yearsUntilRetirement(1981, "adilson"));
-*/
+
 const scoreKoalas = [65, 54, 49];
 const scoreDolphins = [4, 1, 1];
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
@@ -79,3 +79,65 @@ function checkWinner(scoreKoala, scoreDolphin) {
 }
 
 console.log(checkWinner(scoreKoalas, scoreDolphins));
+*/
+// const friend1 = 'Michel';
+// const friend2 = 'Steven';
+// const friend3 = 'Adilson';
+// const friends = new Array('Michel', 'Steven', 'Peter');
+// const calcAge = function (birthYeah) {
+//   return 2025 - birthYeah;
+// };
+
+// friends[2] = 'Jay';
+// friends[3] = ['Paulo'];
+// console.log(friends);
+// const years = [1981, 1967, 1999, 2010, 2019];
+// console.log(calcAge(years[3]));
+// const fullName = ['Adilson', 'Simiao', 'de'];
+// fullName[3] = 'Souza';
+// console.log(fullName);
+// years;
+// console.log(years.length);
+
+// //add last
+// friends.push(5);
+// const newLenght = friends.push('Rafa');
+
+// console.log(friends);
+// for (let rep = 0; rep <= friends.length; rep++) {
+//   if (typeof friends[rep] !== 'string') continue;
+//   console.log('Only String with ' + ' ' + friends[rep]);
+// }
+// //add first
+// friends.unshift('Marcos');
+// console.log(friends);
+
+// //remove first
+// friends.shift('Marcos');
+// console.log(friends);
+
+// //remove last
+// friends.pop();
+// console.log(friends);
+// var x = 5,
+//   y = 8;
+// console.log(x++);
+// friend1.to;
+// var num1 = 115;
+// var num2 = 110;
+// console.log(+num1 < num2);
+function solution(number) {
+  let acc = 0;
+  if (number <= 0) {
+    return 0;
+  } else if (number > 0)
+    for (let i = 0; i < number; i++) {
+      if (i % 3 === 0 || i % 5 === 0) {
+        acc = i + acc;
+      }
+    }
+  return acc;
+}
+
+const res = solution(10);
+console.log(res);
